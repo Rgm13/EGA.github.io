@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+	    <script>
+        (function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+	<title>Estructuras General Arahalenses</title>
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com'>
+<link rel='dns-prefetch' href='//fonts.googleapis.com'>
+<link rel='dns-prefetch' href='//s.w.org'>
+<link rel="alternate" type="application/rss+xml" title="Estructuras General Arahalenses &raquo; Feed" href="feed\index.rss">
+<link rel="alternate" type="application/rss+xml" title="Estructuras General Arahalenses &raquo; Feed de los comentarios" href="comments\feed\index.rss">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/vamosarealizarunaprueba.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='companion-bundle-css' href="#" data-href='http://vamosarealizarunaprueba.com/wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/css/companion.bundle.min.css?ver=1.6.110' type='text/css' media='all'>
+<link rel='stylesheet' id='companion-page-css-css' href='wp-content\themes\highlight\customizer\sections\content.css?ver=1.6.110' type='text/css' media='all'>
+<link rel='stylesheet' id='wp-block-library-css' href='wp-includes\css\dist\block-library\style.min.css?ver=5.5.1' type='text/css' media='all'>
+<link rel='stylesheet' id='mesmerize-parent-css' href='wp-content\themes\mesmerize\style.min.css?ver=5.5.1' type='text/css' media='all'>
+<link rel='stylesheet' id='mesmerize-style-css' href='wp-content\themes\highlight\style.min.css?ver=1.0.15' type='text/css' media='all'>
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:40px !important;}
+/** cached kirki style */@media screen and (min-width: 768px){.header{background-position:center center;}}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.7;}.header-homepage-arrow{font-size:calc( 50px * 0.84 );bottom:20px;background:rgba(255,255,255,0);}.header-homepage-arrow > i.fa{width:50px;height:50px;}.header-homepage-arrow > i{color:#ffffff;}.mesmerize-front-page .header-separator .svg-white-bg{fill:rgb(255,255,255)!important;}.mesmerize-front-page .header-separator svg{height:42px!important;}body .header .svg-white-bg{fill:#ffffff!important;}.header-separator svg{height:37px!important;}.header-homepage .header-description-row{padding-top:20%;padding-bottom:20%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:15%;padding-bottom:15%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:80%!important;}.inner-header-description{text-align:center!important;}}
+</style>
+<link rel='stylesheet' id='mesmerize-style-bundle-css' href='wp-content\themes\mesmerize\assets\css\theme.bundle.min.css?ver=1.0.15' type='text/css' media='all'>
+<link rel='stylesheet' id='mesmerize-fonts-css' href="#" data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;display=swap' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-icons-css' href='wp-content\plugins\elementor\assets\lib\eicons\css\elementor-icons.min.css?ver=5.7.0' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-animations-css' href='wp-content\plugins\elementor\assets\lib\animations\animations.min.css?ver=2.9.14' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-frontend-css' href='wp-content\plugins\elementor\assets\css\frontend.min.css?ver=2.9.14' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-global-css' href='wp-content\uploads\elementor\css\global.css?ver=1598183657' type='text/css' media='all'>
+<link rel='stylesheet' id='google-fonts-1-css' href="#" data-href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.1' type='text/css' media='all'>
+<script type='text/javascript' src='wp-includes\js\jquery\jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' id='jquery-js-after'>
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+</script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js?ver=5.5.1' id='jquery-easing-js'></script>
+<link rel="https://api.w.org/" href="wp-json\index.json"><link rel="alternate" type="application/json" href="wp-json\wp\v2\pages\15.json"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.xml?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes\wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.5.1">
+<link rel="canonical" href="index.htm">
+<link rel='shortlink' href='index.htm'>
+<link rel="alternate" type="application/json+oembed" href="wp-json\oembed\1.0\embed.json?url=http%3A%2F%2Fvamosarealizarunaprueba.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="wp-json\oembed\1.0\embed.xml?url=http%3A%2F%2Fvamosarealizarunaprueba.com%2F&#038;format=xml">
+    <style data-name="header-overlap-with">
+        @media screen and (min-width: 768px) {
+            .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .header-homepage {
+                padding-bottom: 95px;
+            }
+
+            .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .page-content div[data-overlap]:first-of-type > div:not([class*="section-separator"]) {
+                margin-top: -95px;
+            }
+        }
+    </style>
+    
+        <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	<link rel="icon" href="wp-content\uploads\2020\08\cropped-Sin-titulo-1-1-32x32.png" sizes="32x32">
+<link rel="icon" href="wp-content\uploads\2020\08\cropped-Sin-titulo-1-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="wp-content\uploads\2020\08\cropped-Sin-titulo-1-1-180x180.png">
+<meta name="msapplication-TileImage" content="http://vamosarealizarunaprueba.com/wp-content/uploads/2020/08/cropped-Sin-titulo-1-1-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			
+
+/* Estilo botón */
+div.wpforms-container-full .wpforms-form button[type=submit]{
+ padding:15px 40px;
+ text-transform:uppercase;
+ background-color:#F34621;
+ color:#fff;
+ transition:ease-in-out 0.3s;
+} 
+
+.wpforms-form button[type=submit] {
+    background-color: #024488 !important;
+    border-color: #024488 !important;
+    color: #fff !important;
+	
+	
+}
+ 
+.wpforms-form button[type=submit]:hover {
+    background-color: #022B57 !important;
+}
+
+/* Efecto hover botón */
+div.wpforms-container-full .wpforms-form button[type=submit]:hover{
+ background-color:#11486b;
+ color:#fff;
+	
+} 
+
+/* Campo de Nombre y Email */
+div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=email] {
+ height:45px;
+ Font-size:18px;
+}
+
+/* Campo de texto */
+div.wpforms-container-full .wpforms-form textarea{
+ Font-size:18px;
+}
+
+
+function ejr_email_desde ($email){
+ return "direccion@delremitente.com";
+}
+add_filter ("wp_mail_from","ejr_email_desde");
+
+
+
+/** Start Block Kit CSS: 135-3-c665d4805631b9a8bf464e65129b2f58 **/
+
+.envato-block__preview{overflow: visible;}
+
+/** End Block Kit CSS: 135-3-c665d4805631b9a8bf464e65129b2f58 **/
+
+
+
+/** Start Block Kit CSS: 144-3-3a7d335f39a8579c20cdf02f8d462582 **/
+
+.envato-block__preview{overflow: visible;}
+
+/* Envato Kit 141 Custom Styles - Applied to the element under Advanced */
+
+.elementor-headline-animation-type-drop-in .elementor-headline-dynamic-wrapper{
+	text-align: center;
+}
+.envato-kit-141-top-0 h1,
+.envato-kit-141-top-0 h2,
+.envato-kit-141-top-0 h3,
+.envato-kit-141-top-0 h4,
+.envato-kit-141-top-0 h5,
+.envato-kit-141-top-0 h6,
+.envato-kit-141-top-0 p {
+	margin-top: 0;
+}
+
+.envato-kit-141-newsletter-inline .elementor-field-textual.elementor-size-md {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.envato-kit-141-bottom-0 p {
+	margin-bottom: 0;
+}
+
+.envato-kit-141-bottom-8 .elementor-price-list .elementor-price-list-item .elementor-price-list-header {
+	margin-bottom: .5rem;
+}
+
+.envato-kit-141.elementor-widget-testimonial-carousel.elementor-pagination-type-bullets .swiper-container {
+	padding-bottom: 52px;
+}
+
+.envato-kit-141-display-inline {
+	display: inline-block;
+}
+
+.envato-kit-141 .elementor-slick-slider ul.slick-dots {
+	bottom: -40px;
+}
+
+/** End Block Kit CSS: 144-3-3a7d335f39a8579c20cdf02f8d462582 **/
+
+
+
+/** Start Block Kit CSS: 136-3-fc37602abad173a9d9d95d89bbe6bb80 **/
+
+.envato-block__preview{overflow: visible !important;}
+
+/** End Block Kit CSS: 136-3-fc37602abad173a9d9d95d89bbe6bb80 **/
+
+
+
+/** Start Block Kit CSS: 141-3-1d55f1e76be9fb1a8d9de88accbe962f **/
+
+.envato-kit-138-bracket .elementor-widget-container > *:before{
+	content:"[";
+	color:#ffab00;
+	display:inline-block;
+	margin-right:4px;
+	line-height:1em;
+	position:relative;
+	top:-1px;
+}
+
+.envato-kit-138-bracket .elementor-widget-container > *:after{
+	content:"]";
+	color:#ffab00;
+	display:inline-block;
+	margin-left:4px;
+	line-height:1em;
+	position:relative;
+	top:-1px;
+}
+
+/** End Block Kit CSS: 141-3-1d55f1e76be9fb1a8d9de88accbe962f **/
+
+
+
+/** Start Block Kit CSS: 69-3-4f8cfb8a1a68ec007f2be7a02bdeadd9 **/
+
+.envato-kit-66-menu .e--pointer-framed .elementor-item:before{
+	border-radius:1px;
+}
+
+.envato-kit-66-subscription-form .elementor-form-fields-wrapper{
+	position:relative;
+}
+
+.envato-kit-66-subscription-form .elementor-form-fields-wrapper .elementor-field-type-submit{
+	position:static;
+}
+
+.envato-kit-66-subscription-form .elementor-form-fields-wrapper .elementor-field-type-submit button{
+	position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+		-webmit-transform: translate(0, -50%);
+}
+
+.envato-kit-66-testi-slider .elementor-testimonial__footer{
+	margin-top: -60px !important;
+	z-index: 99;
+  position: relative;
+}
+
+.envato-kit-66-featured-slider .elementor-slides .slick-prev{
+	width:50px;
+	height:50px;
+	background-color:#ffffff !important;
+	transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	left:-25px !important;
+	-webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.32);
+	-moz-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.32);
+	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.32);
+}
+
+.envato-kit-66-featured-slider .elementor-slides .slick-prev:before{
+	display:block;
+	margin-top:0px;
+	margin-left:0px;
+	transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+}
+
+.envato-kit-66-featured-slider .elementor-slides .slick-next{
+	width:50px;
+	height:50px;
+	background-color:#ffffff !important;
+	transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	right:-25px !important;
+	-webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.32);
+	-moz-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.32);
+	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.32);
+}
+
+.envato-kit-66-featured-slider .elementor-slides .slick-next:before{
+	display:block;
+	margin-top:-5px;
+	margin-right:-5px;
+	transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+}
+
+.envato-kit-66-orangetext{
+	color:#f4511e;
+}
+
+.envato-kit-66-countdown .elementor-countdown-label{
+	display:inline-block !important;
+	border:2px solid rgba(255,255,255,0.2);
+	padding:9px 20px;
+}
+
+/** End Block Kit CSS: 69-3-4f8cfb8a1a68ec007f2be7a02bdeadd9 **/
+
+
+
+/** Start Block Kit CSS: 71-3-d415519effd9e11f35d2438c58ea7ebf **/
+
+.envato-block__preview{overflow: visible;}
+
+/** End Block Kit CSS: 71-3-d415519effd9e11f35d2438c58ea7ebf **/
+
+
+
+		</style>
+		    <style id="page-content-custom-styles">
+            </style>
+        <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #ffffff;
+        }
+    </style>
+    </head>
+
+<body class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-15 custom-background wp-custom-logo offcanvas_menu-tablet mesmerize-front-page elementor-default elementor-kit-133 elementor-page elementor-page-15 mesmerize-content-no-padding ">
+    <style>
+        .screen-reader-text[href="#page-content"]:focus {
+            background-color: #f1f1f1;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            clip: auto !important;
+            clip-path: none;
+            color: #21759b;
+           
+        }
+    </style>
+    <a class="skip-link screen-reader-text" href="#page-content">Saltar al contenido</a>
+    <div id="page-top" class="header-top homepage">
+	        <div class="header-top-bar ">
+            <div class="">
+                <div class="header-top-bar-inner row middle-xs start-xs ">
+                        <div class="header-top-bar-area  col-xs area-left">
+                  <div class="top-bar-field" data-type="group" data-dynamic-mod="true">
+              <i class="fa fa-map-marker"></i>
+              <span>C/ Vivaldi nº 3
+41600 Arahal (Sevilla)</span>
+          </div>
+                    <div class="top-bar-field" data-type="group" data-dynamic-mod="true">
+              <i class="fa fa-phone"></i>
+              <span>+34 955 841 837</span>
+          </div>
+                    <div class="top-bar-field" data-type="group" data-dynamic-mod="true">
+              <i class="fa fa-envelope"></i>
+              <span>victor@estructurasega.es</span>
+          </div>
+              </div>
+                            <div class="header-top-bar-area  col-xs-fit area-right">
+            </div>
+                    </div>
+            </div>
+        </div>
+        	<div class="navigation-bar homepage">
+    <div class="navigation-wrapper ">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a href="index.htm" class="custom-logo-link" data-type="group" data-dynamic-mod="true" rel="home" aria-current="page"><img width="499" height="125" src="wp-content\uploads\2020\08\cropped-Sin-titulo-1.png" class="custom-logo" alt="Estructuras General Arahalenses" srcset="wp-content\uploads\2020\08\cropped-Sin-titulo-1.png 499w, wp-content\uploads\2020\08\cropped-Sin-titulo-1-300x75.png 300w" sizes="(max-width: 499px) 100vw, 499px"></a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-15 current_page_item menu-item-24"><a href="index.htm" aria-current="page">Inicio</a></li>
+<li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="nuestra-filosofia-2\index.htm">Nuestra Filosofía</a></li>
+<li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-294"><a href="proyectos-realizados\index.htm">Proyectos &#038; Linea de Negocios</a>
+<ul class="sub-menu">
+	<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-307"><a href="proyectos-realizados\ferroviarias\index.htm">Ferroviarias</a>
+	<ul class="sub-menu">
+		<li id="menu-item-422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-422"><a href="proyectos-realizados\ferroviarias\estacion-de-tren-de-bellavista\index.htm">Estación de Tren de Bellavista</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="contacto-2\index.htm">Contacto</a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a href="index.htm" class="custom-logo-link" data-type="group" data-dynamic-mod="true" rel="home" aria-current="page"><img width="499" height="125" src="wp-content\uploads\2020\08\cropped-Sin-titulo-1.png" class="custom-logo" alt="Estructuras General Arahalenses" srcset="wp-content\uploads\2020\08\cropped-Sin-titulo-1.png 499w, wp-content\uploads\2020\08\cropped-Sin-titulo-1-300x75.png 300w" sizes="(max-width: 499px) 100vw, 499px"></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-principal-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-15 current_page_item menu-item-24"><a href="index.htm" aria-current="page">Inicio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="nuestra-filosofia-2\index.htm">Nuestra Filosofía</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-294"><a href="proyectos-realizados\index.htm">Proyectos &#038; Linea de Negocios</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-307"><a href="proyectos-realizados\ferroviarias\index.htm">Ferroviarias</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-422"><a href="proyectos-realizados\ferroviarias\estacion-de-tren-de-bellavista\index.htm">Estación de Tren de Bellavista</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="contacto-2\index.htm">Contacto</a></li>
+</ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+
+<div id="page" class="site">
+
+	        <div class="header-wrapper">
+            <div class='header-homepage  color-overlay  header-full-height' style=''>
+                                                
+    <div class="header-description gridContainer content-on-center">
+        <div class="row header-description-row middle-sm">
+    <div class="header-content header-content-centered col-md col-xs-12">
+        <div class="align-holder center">
+            <h1 class="hero-title">Estructucturas &amp; Encofrados</h1><p class="header-subtitle">EGA</p><div data-dynamic-mod-container="" class="header-buttons-wrapper"><a class="button big color1 round" target="_self" href="index.htm#features-2">Quienes somos</a><a class="button big color-white round outline" target="_self" href="contacto-2\index.htm">Contáctanos</a></div>        </div>
+    </div>
+</div>
+    </div>
+    
+        <script>
+		if (window.mesmerizeSetHeaderTopSpacing) {
+			window.mesmerizeSetHeaderTopSpacing();
+		}
+    </script>
+                    
+                <div class="header-separator header-separator-bottom "><svg class="mesmerize" preserveaspectratio="none" width="1000" height="100" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg"><desc>Created with Sketch.</desc><g fill="#000"><path class="svg-white-bg" d="M0 50.582c50.292 15.873 94.979 23.809 134.063 23.809 160.18 0 189.492-54.182 308.938-54.182 119.445 0 181.541 74.304 377.394 74.935 76.087.245 135.955-14.609 179.606-44.563v49.5h-1000v-49.5z"></path><path class="svg-white-bg" d="M0 21.652c33.432 32.916 78.986 49.375 136.66 49.375 160.18 0 186.895-61.035 306.34-61.035 117.359-.152 223.758 80.344 376.938 83.09 76.087.245 136.107-21.467 180.063-65.137v72.136h-1000v-78.429z" fill-opacity=".5"></path><path class="svg-white-bg" d="M0 1.082c28.932 45 74.518 67.5 136.758 67.5 160.18 0 158.211-67.5 306.707-67.5 128.447 0 255.178 91.772 376.555 89.852 64.97-1.896 124.964-26.374 179.98-73.434v82.582h-1000v-99z" fill-opacity=".3"></path></g></svg></div>                        <div class="header-homepage-arrow-c">
+            <span class="header-homepage-arrow move-down-bounce"> <i class="fa arrow fa-angle-down" aria-hidden="true"></i>
+            </span>
+        </div>
+                    </div>
+        </div>
+        
+    <div id='page-content' class="page-content">
+        <div class="content">
+            <div id="features-2" style="background-color: #ffffff;" data-label="Features" data-id="features-ov-4-mc" data-export-id="features-ov-4-mc" data-category="features" class="features-ov-4-mc content-section content-section-spacing"><div class=""> <div data-type="row" class="row spaced-cols text-center"><div class="col-xs-12 col-sm-4 col-padding"> <a data-cp-link="1" href="#" target="_self" rel="noopener noreferrer"><i class="fa icon shadow-large-black aligncenter color1 fa-building-o reverse round large"></i></a> <div data-type="column" class=""> <h5 class="font-400">Nacimiento</h5> <p class="">EGA es una empresa nacional dedicada a la construcción. En sus inicios nace con el claro objetivo de crecer, desenvolverse y consolidarse en el sector de la obra civil y la edificación, especializándose en cimentaciones y estructuras de hormigón armado.</p></div> </div> <div class="col-xs-12 col-sm-4 col-padding"> <i class="fa icon shadow-large-black aligncenter color2 fa-line-chart reverse round large"></i> <div data-type="column" class=""><h5 class="font-400">Evolución</h5> <p class="">En los últimos años, debido a la reestructuración del sector, ha demostrado un creciente interés por desarrollar obras en el ámbito de las energías renovables, del agua potable y las aguas residuales, así como en proyectos para las fuerzas armadas norteamericanas, abriendo nuevas posibilidades y campos de actuación.</p></div> </div> <div class="col-xs-12 col-sm-4 col-padding"> <i class="fa icon shadow-large-black aligncenter color4 fa-certificate reverse round large"></i> <div data-type="column" class=""><h5 class="font-400">Proyectos</h5> <p class="">Entre los proyectos desarrollados, encontramos principalmente, estaciones de tratamiento de agua potable, estaciones depuradoras de aguas residuales, tanques de tormentas, balsas, centrales termosolares, fotovoltaicas, biodiesel y de ciclo combinado de gas, pistas de aterrizaje, urbanizaciones etc., en una clara apuesta por el futuro del sector de la obra civil en España.</p></div> </div></div> </div></div><div id="proyectos" style="background-color: #f5fafd;" data-label="Proyectos" data-id="about-images-right-section-mc" data-export-id="about-images-right-section-mc" data-bullets-visibility="true" data-category="about" class="about-images-right-section-mc content-section content-section-spacing full-screen-section"><div class="gridContainer"> <div class="row middle-sm text-center"><div class="col-sm-5 content-left-sm" data-type="column"> <h5 class="">Algunos de nuestros proyectos</h5> <h2 class="">Arquetas Balazote en Albacete</h2> <p class="">OBRA: ARQUETONES, CANTARA DE BOMEO Y TOMA EN CANAL PARA LA SEGUNDA FASE DE SUSTITUCION DE BOMBEOS EN LA ZONA REGLABLE BALAZOTE – LA HERRERA (ALBACETE)<br>AÑO: 2015</p> <a class="button color1" href="proyectos-realizados\index.htm" target="_self" data-cp-link="1" rel="noopener noreferrer">Proyectos</a></div> <div class="col-sm-7 space-bottom-xs"><div class="image-group-side-3-img"> <img class="topimg shadow-large" src="wp-content\uploads\2020\08\iphone-de-antonio-4133-640x480-1.jpg" alt="" title="iphone-de-antonio-4133-640x480"> <img class="rightimg shadow-large" src="wp-content\uploads\2020\08\iphone-de-antonio-3983-640x480-1.jpg" alt="" title="iphone-de-antonio-3983-640x480"> <div class="leftimg"> <img class="shadow-large" src="wp-content\uploads\2020\08\iphone-de-antonio-4032-640x480-1.jpg" alt="" title="iphone-de-antonio-4032-640x480"></div> </div></div> </div></div> </div><div id="que-mas-podemos-ofrecerte" style="background-color: #ffffff;" data-label="Que mas podemos ofrecerte" data-id="features-16-card-bordered-mc" data-export-id="features-16-card-bordered-mc" data-bullets-visibility="true" data-category="features" class="features-16-card-bordered-mc content-section content-section-spacing"><div class="gridContainer"> <div class="row text-center"><div class="section-title-col" data-type="column"> <h5 class=""></h5> <h2 class="">Que mas podemos ofrecerte!</h2> <p class="lead">Echa un vistazo</p></div> </div> <div class="row spaced-cols" data-type="row"> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="card no-padding bordered y-move"> <img class="face" src="wp-content\uploads\2020\08\cropped-obras-ferroviarias.jpg" alt="" title="cropped-obras-ferroviarias.jpg"> <div data-type="column" class="col-padding-small col-padding-small-xs description-container"> <h4 class="font-500">Obras Ferroviarias</h4> <p class="">OBRA: ESTACION DE TREN PARA ADIF “APEADERO DE LA SALUD”<br>LOCALIDAD: BELLAVISTA (SEVILLA)<br>TRABAJOS: Ejecución de Muros, forjados para andenes y obra civil para instalaciones.<br>AÑO: 2015</p></div> <div data-type="column" class="col-padding-small col-padding-small-xs read-more-container"><a class="read-more" href="proyectos-realizados\ferroviarias\index.htm" target="_self" data-cp-link="1" rel="noopener noreferrer">Mas</a></div> </div></div> <div class="col-xs-12 col-sm-6 col-md-4"><div class="card no-padding bordered y-move"> <img class="face" src="wp-content\uploads\2020\08\cropped-maritimas.jpg" alt="" title="cropped-maritimas.jpg"> <div data-type="column" class="col-padding-small col-padding-small-xs description-container"> <h4 class="font-500">Obras Maritimas</h4> <p class="">OBRA: NUEVO ACCESO A CADIZ. PUENTE SOBRE LA BAHIA. “PUENTE DE LA PEPA”<br>TRABAJOS: Ejecución de “Duques de Alba” para protección de las pilas del puente.<br>AÑO: 2016</p></div> <div data-type="column" class="col-padding-small col-padding-small-xs read-more-container"><a class="read-more" href="#" target="_self" data-cp-link="1" rel="noopener noreferrer">Mas</a></div> </div></div> <div class="col-xs-12 col-sm-6 col-md-4"><div class="card no-padding bordered y-move"> <img class="face" src="wp-content\uploads\2020\08\cropped-DSC01476-640x480-1.jpg" alt="" title="cropped-DSC01476-640x480-1.jpg"> <div data-type="column" class="col-padding-small col-padding-small-xs description-container"> <h4 class="font-500">Obras Militares</h4> <p class="">OBRA: PISTA DE ATERRIZA EN LA BASE AEREA DE MORON DE LA FRONTERA (SEVILLA)<br>LOCALIDAD: MORON DE LA FRONTERA (SEVILLA)<br>TRABAJOS: HORMIGONADO DE PISTA CON HORMIGON HF-450 CON EXTENDEDORA<br>AÑO: 2012</p></div> <div data-type="column" class="col-padding-small col-padding-small-xs read-more-container"><a class="read-more" href="#" target="_self" data-cp-link="1" rel="noopener noreferrer">Mas</a></div> </div></div> </div></div> </div>        </div>
+    </div>
+
+<div class='footer footer-content-lists footer-border-accent  paralax'>
+    <div class='footer-content'>
+        <div class="gridContainer">
+            <div class="row">
+                <div class="col-sm-8 flexbox">
+                    <div class="row widgets-row">
+                        <div class="col-sm-4">
+                            <div id="pages-4" class="widget widget_pages"><h4 class="widgettitle">Páginas</h4>
+			<ul>
+				<li class="page_item page-item-15 current_page_item"><a href="index.htm" aria-current="page">Inicio</a></li>
+<li class="page_item page-item-151"><a href="nuestra-filosofia-2\index.htm">Nuestra Filosofía</a></li>
+<li class="page_item page-item-264"><a href="proyectos-realizados\index.htm">Proyectos &#038; Linea de Negocios</a></li>
+<li class="page_item page-item-130"><a href="contacto-2\index.htm">Contacto</a></li>
+			</ul>
+
+			</div>                        </div>
+                        <div class="col-sm-4">
+                                                    </div>
+                        <div class="col-sm-4">
+                                                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 flexbox center-xs middle-xs content-section-spacing-medium footer-bg-accent">
+                  <div>
+                    <div class="footer-logo space-bottom-small">
+                        <h2><span data-type="group" data-dynamic-mod="true">Estructuras General Arahalenses</span></h2>
+                    </div>
+                    <p class="copyright">&copy;&nbsp;&nbsp;2020&nbsp;Estructuras General Arahalenses.&nbsp;Construido utilizando WordPress y el <a target="_blank" href="https://extendthemes.com/go/built-with-highlight/" class="mesmerize-theme-link">Highlight Theme</a></p>                        <div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+        
+    </div>
+
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	</div>
+
+        <div id="side-navigation" class="side-navigation">
+            
+            
+            <ul data-type="none" data-preset="preset-2" data-after-scroll="true">
+                <li class="hero-bullet ">
+                    <a href="#page-top">Arriba</a>
+                </li>
+            </ul>
+        </div>
+        
+        <script type='text/javascript' defer="defer" src='wp-content\plugins\mesmerize-companion\theme-data\mesmerize\assets\js\companion.bundle.min.js?ver=1.6.110' id='companion-bundle-js'></script>
+<script type='text/javascript' defer="defer" src='wp-includes\js\imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' defer="defer" src='wp-includes\js\masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' id='mesmerize-theme-js-extra'>
+/* <![CDATA[ */
+var mesmerize_backstretch = {"images":["http:\/\/vamosarealizarunaprueba.com\/wp-content\/uploads\/2020\/08\/slide02amini-900x600_c.jpg","http:\/\/vamosarealizarunaprueba.com\/wp-content\/uploads\/2020\/08\/20160314_110002-900x600_c.jpg"],"duration":"3000","transitionDuration":"1000","animateFirst":""};
+/* ]]> */
+</script>
+<script type='text/javascript' defer="defer" src='wp-content\themes\mesmerize\assets\js\theme.bundle.min.js?ver=1.0.15' id='mesmerize-theme-js'></script>
+<script type='text/javascript' src='wp-content\themes\highlight\assets\js\theme-child.js' id='theme-child-js'></script>
+<script type='text/javascript' defer="defer" src='wp-includes\js\wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+    <script>
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+            var t, e = location.hash.substring(1);
+            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+        }, !1);
+    </script>
+				<script type="text/javascript">
+				jQuery.noConflict();
+				(function( $ ) {
+					$(function() {
+						// More code using $ as alias to jQuery
+						$("area[href*=\\#],a[href*=\\#]:not([href=\\#]):not([href^='\\#tab']):not([href^='\\#quicktab']):not([href^='\\#pane'])").click(function() {
+							if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+								var target = $(this.hash);
+								target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+								if (target.length) {
+								$('html,body').animate({
+								scrollTop: target.offset().top - 20  
+								},900 ,'easeInCubic');
+								return false;
+								}
+							}
+						});
+					});
+				})(jQuery);	
+			</script>				
+				</body>
+</html>
